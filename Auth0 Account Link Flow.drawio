@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="4srNqFtIeXrAPYY_6N59">
-    <mxGraphModel dx="2173" dy="1435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1847" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -81,11 +81,25 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="BOQcGej0kFste2dO1a2d-2" edge="1" parent="1" source="DEm6dZgQ_ypkA4Yh7CjE-37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;strokeColor=#E07A5F;strokeWidth=2;align=center;verticalAlign=middle;endArrow=classicThin;endFill=1;flowAnimation=1;" target="BOQcGej0kFste2dO1a2d-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BOQcGej0kFste2dO1a2d-4" connectable="0" parent="BOQcGej0kFste2dO1a2d-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" value="Link Accounts" vertex="1">
+          <mxGeometry relative="1" x="-0.0348" y="2" as="geometry">
+            <mxPoint x="11" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="DEm6dZgQ_ypkA4Yh7CjE-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#E07A5F;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#F2CC8F;" value="Auth0 offers Account Linking" vertex="1">
           <mxGeometry height="60" width="120" x="704" y="850" as="geometry" />
         </mxCell>
         <mxCell id="DEm6dZgQ_ypkA4Yh7CjE-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#E07A5F;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#F2CC8F;" value="Auth0 Creates another user.&lt;div&gt;Same email, different connection&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="530" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="BOQcGej0kFste2dO1a2d-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2CC8F;strokeColor=#E07A5F;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;" value="Re-authenticate with first login method" vertex="1">
+          <mxGeometry height="60" width="120" x="878" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="BOQcGej0kFste2dO1a2d-5" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;" value="For security purposes, the extension does not automatically link users with the same email, even if emails are verified, because verified emails are not enough evidence to prove that the user can currently authenticate to both accounts.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Lets use the below example:&lt;/div&gt;&lt;div&gt;&amp;nbsp;&quot;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;i&gt;A user logs in with their Facebook account using the email &lt;span style=&quot;background-color: light-dark(rgb(207, 207, 207), rgb(237, 237, 237));&quot;&gt;john@acme.com&lt;/span&gt; and then later authenticates with Google using the same email address.&lt;/i&gt;&lt;/font&gt;&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;If the user wants to link their accounts, they will be redirected to Facebook to authenticate. If the user is already logged in, Facebook will redirect back to the application, and the user will be automatically linked. If they are not logged in, they will be prompted to authenticate with their Facebook credentials. After Facebook redirects back to Auth0, the Facebook account will be linked with the Google account. This process ensures that the user has the credentials to authenticate to both accounts, which allows the accounts to be linked safely and correctly.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="375" width="250" x="1020" y="822.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
